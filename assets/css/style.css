@@ -82,7 +82,7 @@ h1 {
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(68, 68, 68, 0.748);
 }
-span {
+.termwhite {
     color: white;
 }
 
@@ -106,5 +106,5 @@ a {
     text-decoration: none;
 }
 a:hover{
-  font-size: 28px;
+    font-size: 28px;
 }
