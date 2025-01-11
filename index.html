@@ -131,6 +131,56 @@ Thank you for being our guiding light!
     Best of wishes with your future endeavors from C.I. class of 2024 or as you consatnly tell us "My best group ever!!!"</p>
     <p class="small-font">P.S. Click on the link above to get your own copy of the track from just about any streaming service</p>
     
+    <button id="open-terminal" style="position: fixed; bottom: 10px; left: 10px;">Open Terminal</button>
 
+    <div id="terminal" style="display: none; position: fixed; bottom: -200px; left: 0; width: 100%; height: 200px; background-color: black; color: green; overflow-y: scroll; font-family: monospace; padding: 10px; text-align: left;">
+        <p>$ Welcome to the terminal for oct-2024-south-york-bootcamp</p>
+        <p>workspace/amy/nick (main) $ <span>Thank you for being an amazing mentor and guiding us through every challenge. Wishing you the best of luck in all your future endeavors!</span></p>
+        <p>workspace/amy/kaz (main) $ <span>Thank you for believing in us even when we didn't believe in ourselves</span></p>
+        <p>workspace/amy/tom_b (main) $ <span>Thanks for all your help, sorry you're leaving & all the best for the future!</span></p>
+        <p>workspace/amy/abdirahman (main) $ <span>Really appreciate your efforts, honestly really glad to have had you as our Cohort mentor, don’t change!</span></p>
+    </div>
+
+    <script>
+        const openTerminalButton = document.getElementById('open-terminal');
+        const terminal = document.getElementById('terminal');
+
+        openTerminalButton.onclick = function() {
+            terminal.style.display = 'block';
+            terminal.style.transition = 'transform 0.5s ease-in-out';
+            terminal.style.transform = 'translateY(-200px)';
+        }
+    </script>
+    <button id="close-terminal" style="position: fixed; bottom: 10px; left: 100px; display: none;">Close Terminal</button>
+    
+    <script>
+        const closeTerminalButton = document.getElementById('close-terminal');
+
+        openTerminalButton.onclick = function() {
+            terminal.style.display = 'block';
+            terminal.style.transition = 'transform 0.5s ease-in-out';
+            terminal.style.transform = 'translateY(-200px)';
+            closeTerminalButton.style.display = 'block';
+        }
+
+        closeTerminalButton.onclick = function() {
+            terminal.style.transform = 'translateY(0)';
+            setTimeout(() => {
+                terminal.style.display = 'none';
+                closeTerminalButton.style.display = 'none';
+            }, 500); // Match the transition duration
+        }
+    </script>
+
+    <script>
+        const closeTerminalButton = document.getElementById('close-terminal');
+
+        closeTerminalButton.onclick = function() {
+            terminal.style.transform = 'translateY(0)';
+            setTimeout(() => {
+                terminal.style.display = 'none';
+            }, 500); // Match the transition duration
+        }
+    </script>
 </body>
 </html>
