@@ -100,4 +100,8 @@ h1 {
 a {
     color: white;
     padding: 5px;
+    text-decoration: none;
+}
+a:hover{
+  font-size: 28px;
 }
