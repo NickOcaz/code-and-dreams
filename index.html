@@ -9,13 +9,47 @@
 <body>
 
     <h1>Amy</h1>
-    <p class="small-font">We salute you, an inspirational mentor guiding us through every challenge.
-<br>
-Enjoy your song!</p>
-    <div class ="jukebox">
+    <p class="small-font">An inspirational mentor guiding us through every challenge.
+Thank you for being our guiding light!
+
+    <div class="jukebox">
     <div class = "jukebox-image">
         </div>
+        <div class="track-available">
+            <a href="#" id="track-available-link">Link to this track</a>
+        </div>
 
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Track now available at:</h2>
+                <ul>
+                    <li><a href="https://example.com/link1" target="_blank">Link 1</a></li>
+                    <li><a href="https://example.com/link2" target="_blank">Link 2</a></li>
+                    <li><a href="https://example.com/link3" target="_blank">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            const modal = document.getElementById("modal");
+            const btn = document.getElementById("track-available-link");
+            const span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
    
     <audio controls autoplay>
         <source src="assets/media/AUDIO-2021-04-26-06-14-11.mp3" type="audio/mpeg">
@@ -30,7 +64,7 @@ Enjoy your song!</p>
         { time: 8, text: "Lines of code that comes alive" },
         { time: 12, text: "Creating wonders, we contrive" },
 
-        { time: 15, text: "We code. We dream" },
+        { time: 15, text: "We code, we dream" },
 
         { time: 16, text: "Build futures bright" },
         { time: 20, text: "Amy is the guiding light" },
@@ -42,25 +76,25 @@ Enjoy your song!</p>
         { time: 40, text: "Every bug that we can't find" },
         { time: 44, text: "There's a gal that has the time" },
 
-        { time: 47, text: "We code. We dream" },
+        { time: 47, text: "We code, we dream" },
         { time: 49, text: "Build futures bright" },
         { time: 52, text: "Amy is the guiding light" },
         { time: 56, text: "Every time we've baked our head" },
         { time: 60, text: "Through K.P.I's we all dread" },
 
-        { time: 63, text: "We code. We dream" },
+        { time: 63, text: "We code, we dream" },
         { time: 64, text: "Build futures bright" },
         { time: 67, text: "Amy is the guiding light" },
         { time: 72, text: "Every time we've baked our head" },
         { time: 76, text: "Through K.P.I's we all dread" },
 
-        { time: 79, text: "We code. We dream" },
+        { time: 79, text: "We code, we dream" },
         { time: 81, text: "Build futures bright" },
         { time: 84, text: "Amy is the guiding light" },
         { time: 88, text: "Every time we've baked our head" },
         { time: 92, text: "Through K.P.I's we all dread" },
   
-        { time: 95, text: "We code. We dream" },
+        { time: 95, text: "We code, we dream" },
         { time: 97, text: "Build futures bright" },
         { time: 100, text: "Amy is the guiding light" },
         { time: 104, text: "Every time we've baked our head" },
@@ -90,6 +124,13 @@ Enjoy your song!</p>
     });
 </script>
 </div>
+
+
+<p class="small-font">Here's your own theme tune as a token of our appreciation for all that you done, hope you enjoy a little sing along with it.
+    <br>
+    Best of wishes with your future endeavors from C.I. class of 2024 or as you consatnly tell us "My best group ever!!!"</p>
+    <p class="small-font">P.S. Click on the link above to get the track from just about anywhere and everywher</p>
+    
 
 </body>
 </html>
