@@ -1,5 +1,5 @@
 
-# Project Code and Dreams
+# Project: Code and Dreams
 <p align="center">
     <img src="assets/media/BANNER.png" alt="Jukebox">
 </p>
